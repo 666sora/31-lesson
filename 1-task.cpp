@@ -77,7 +77,7 @@ public:
         }
         
         toyPtr = othToyPtr.toyPtr;
-        counterPtr = &(*othToyPtr.counterPtr); // надо проверить
+        counterPtr = &(*othToyPtr.counterPtr);
         (*counterPtr)++;
     }
     shared_ptr_toy& operator=(const shared_ptr_toy& othToyPtr) {
@@ -97,7 +97,7 @@ public:
         }
 
         toyPtr = othToyPtr.toyPtr;
-        counterPtr = &(*othToyPtr.counterPtr); // надо проверить
+        counterPtr = &(*othToyPtr.counterPtr);
         (*counterPtr)++;
         return *this;
     }
